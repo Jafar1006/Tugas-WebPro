@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        /* Add your CSS styles here */
+        body , html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+
+            height: 15%;
+            background-color: #0461af;
+        }
+        .content {
+            height: 70%;
+            display: flex;
+        }
+        .table {
+            width: 20%;
+            height: 100%;
+        }
+        .middle {
+            width: 60%;
+            height: 100%;
+        }
+        .image {
+            width: 20%;
+            height: 100%;
+            align-items: right;
+        }
+        .footer {
+            height: 15%;
+            background-color: #0461af;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Header content goes here -->
+        <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+    </div>  
+    <div class="content">
+        <div class="table">
+            <!-- Table content goes here -->
+            <iframe src="table.html" frameborder="0" align="left" scrolling="no"></iframe>
+        </div>
+        <div class="middle">
+            <!-- Middle content goes here -->
+            <iframe src="middle.html" name="middle" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="image">
+            <!-- Image content goes here -->
+            <iframe src="image.html" frameborder="0" align="right" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Footer content goes here -->
+        <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
