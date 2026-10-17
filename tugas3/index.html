@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JavaScript (form) - 103032400109</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Form Pemesanan Barang</h2>
+        </div>
+        <div class="container-form">
+            <form action="#" method="POST">
+                <table cellpadding="0">
+                    <tr>
+                        <td><label for="kodeBarang">Kode Barang</label></td>
+                        <td><input type="text" name="kodeBarang" id="kodeBarang"><button type="button" id="btnTebak"
+                                onclick="tebakBarang()">Tebak</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td><input type="text" id="namaBarang" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Harga Barang</td>
+                        <td><input type="text" id="hargaBarang" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="jumlahBarang">Jumlah Barang</label></td>
+                        <td><input type="text" name="jumlahBarang" id="jumlahBarang"><button type="button"
+                                id="btnJumlah" onclick="hitungTotal()">Hitung</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total Harga</td>
+                        <td><input type="text" id="totalHarga" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Diskon</td>
+                        <td><input type="text" id="diskonHarga" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Total Bayar</td>
+                        <td><input type="text" id="totalBayar" readonly></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br />
+        <div class="print-btn"><input type="button" onclick="window.print()" value="cetak" /></div>
+        <div class="container-table">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>Kode barang</th>
+                    <th>Nama Barang</th>
+                    <th>Harga barang</th>
+
+                </tr>
+                <tr>
+                    <td>A001</td>
+                    <td>Televisi Samsung 50"S</td>
+                    <th>
+                        <input type="text" name="harga" id="tv" size="7" value="4750000" readonly />
+                    </th>
+
+                </tr>
+                <tr>
+                    <td>A002</td>
+                    <td>VCD Player Sony</td>
+                    <th>
+                        <input type="text" name="harga" id="vcd" size="7" value="1500000" readonly />
+                    </th>
+
+                </tr>
+                <tr>
+                    <td>A003</td>
+                    <td>Mini Compo</td>
+                    <th>
+                        <input type="text" name="harga" id="miniCompo" size="7" value="2000000" readonly />
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
