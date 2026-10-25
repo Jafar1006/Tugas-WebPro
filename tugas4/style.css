@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+}
+
+.form-container {
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    background-color: #0000FF;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.form-body {
+    background-color: #FFFF00;
+    padding: 20px 40px 30px 40px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 120px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+}
+
+.form-group input,
+.form-group select {
+    border: 1px solid #a0a0a0;
+    padding: 4px 6px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.input-kode {
+    width: 200px;
+}
+
+.input-nama,
+.input-total {
+    width: 340px;
+}
+
+.input-harga {
+    width: 140px;
+}
+
+.input-jumlah {
+    width: 110px;
+}
+
+.select-metode {
+    width: 110px;
+}
+
+button {
+    background-color: #c0c0c0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:active {
+    background-color: #a0a0a0;
+}
+
+.btn-side {
+    margin-left: 8px;
+}
+
+.form-action {
+    display: flex;
+    margin-top: 5px;
+}
+
+.spacer {
+    width: 120px;
+}
+
+input[readonly] {
+    background-color: #fff;
+}
